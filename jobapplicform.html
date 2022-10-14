@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedyPC</title>
+    <link rel="stylesheet" href="jobapplicform.css">
+</head>
+<body>
+    <p>Welcome to SpeedyPC computer garage. If you are interested in working with us kindly fill the application 
+        form below and click the submit button</p>
+    <form action="mailto: samuelngig812@gmail.com" method="post">
+      
+        <p><b>SECTION A: Personal details</SECTION></b></p>
+      <label>Which possition are you appling for?</label><br>
+      <input type="radio" name="possition" value="manager">Manager<br>
+      <input type="radio" name="possition" value="directo">Director<br>
+      <input type="radio" name="possition" value="supervisor">Supervisor<br>
+      <input type="radio" name="possition" value="secretary">Secretary<br><hr>
+
+      <label>What is Your name?</label><br>
+      <input type="text" name="sirname" placeholder="Sir name" size="15" autofocus><br>
+      <input type="text" name="fname" placeholder="F.name" size="15"><br>
+      <input type="text" name="lname" placeholder="L.name" size="15"><br><br>
+
+      <label>What is your nationality?</label><br>
+      <select name="nationality">
+          <option value="null">Select nationality</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+          <option value="rwand">Rwanda</option>
+          <option value="burundi">Burundi</option>
+      </select><br>
+     
+      <label>Enter your date of birth</label><br>
+      <input type="date" id="dob" name="dob"><br>
+      <label>Enter your address </label><br>
+      <textarea name="address" id="address" cols="50" rows="7">---Enter your address here---</textarea><br>
+      <label>Enter your telephone number</label><br>
+      <input type="text" name="phone"><br>
+      <label>Enter your email address</label><br>
+      <input type="email" name="email" required><br><hr>
+
+      <P><b>SECTION B: Academic history and qualifications</b></P><br>
+      <label>Tell your academic history</label><br>
+      <textarea name="academic" rows="7" cols="50">---Tell your academic history here---</textarea><br>
+      <label>For how long have you been in the work industry? Give in a scale of 0-10</label><br>
+      <input type="range" name="years-of-experience" min="0" max="10" step="1" value="0"><br>
+      <label>Tell us your personal statement.</label><br>
+      <textarea name="personal-stastement" rows="7" cols="50">---Tell your personal statement here---</textarea><br>
+       
+      <p><b>SECTION C: Referees</b></p>
+      <p>Mention two referees includind name, occupation, relation, address and telephone number</p>
+      <p><b>1. First referee details</b></p>
+      <label>First name</label>
+      <input type="text" name="r1f-name" placeholder="F.name">
+      <label>Last name</label>
+      <input type="text" name="r1l-name" placeholder="L.name">
+      <label>occupation</label><br>
+      <input type="text" name="r1-occupation"><br>
+      <label>Address</label><br>
+      <input type="text" name="r1-address" placeholder="Enter city name"><br>
+      <label>Telephone</label><br>
+      <input type="number" name="r1-telephone"><br>
+      <label>Relationship</label><br>
+      <select name="relationship-1">
+          <option value="null">Select</option>
+          <option value="family-member">Family mamber</option>
+          <option value="not-a-family-member">Not a family member</option>
+      </select>
+      <p><b>2. Second referee</b></p>
+      <label>First name</label>
+      <input type="text" name="r2-fname" placeholder="F.name">
+      <label>Last name</label>
+      <input type="text" name="r2-lname" placeholder="L.name"><br>
+      <label>Occupation</label><br>
+      <input type="text" name="r2-occupation"><br>
+      <label>Address</label><br>
+      <input type="text" name="r2-address" placeholder="Enter city name"><br>
+      <label>Telephone</label><br>
+      <input type="number" name="r2-telephone"><br>
+      <label>Relationship</label><br>
+      <select  name="relationship-2">
+          <option name="select" value="null">Select</option>
+          <option value="family-member">Family member</option>
+          <option name="not-a-family-member">Not a family member</option><br>  
+      </select><hr>
+      <hr><input type="reset" name="reset-btn"><input type="submit" name="submit-btn">
+    </form>    
+<script src="jobapplicform.js"></script>
+</body>
+</html>
